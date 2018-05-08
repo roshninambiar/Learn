@@ -1,0 +1,55 @@
+CI/CD Tools 
+1. Codeship
+	Advantage 
+		1. Ranked 1st as a CI tool. 
+		2. FTP, SFTP, SCP, RSYNC and SSH support. 
+ 	Disadvantage 
+		1. Hosted service: Access code easily. 
+
+2. CircleCI 
+	Advantage 
+		1. Dedicated servers are not required. 
+		2. Tests can be parallelized (8 way parallelization) across many machines thus is preferred over Jenkins. 
+		3. More options for deployment tools as compared to Codeship. 
+		4. Supports multiple database like Cassandra and Solr. (Codeship doesn't support these two). 
+		5. Good customer support. 
+	Disadvantage 
+		1. Heavy pricing 
+		2. Works only with BitBucket and GitHub 
+
+3. Jenkins 
+	Advantages 
+		1. Leading open source tool for CI/CD. 
+		2. Flexible because of feature extension using plugins (over 1000+ plugins). 
+		3. Jenkins "Blue Ocean" for improving UI/UX. 
+	Disadvantage 
+		1. Dedicated severs and time taking. 
+
+4. GitLab CI 
+	Advantages 
+		1. Built-in CI/CD in GitLab 
+		2. Application Performance monitoring 
+		3. Preview changes with review apps 
+		4. Automatic retry for failed CI jobs: You can specify a retry keyword in your .gitlab-ci.yml file to make GitLab CI/CD retry a job for a specific number of times before marking it as failed. 
+	Disadvantage 
+		1. Details on duration of each command execution not present 
+		2. Cannot manage JUnit Reports 
+	https://docs.gitlab.com/ee/ci/img/cicd_pipeline_infograph.png 
+ 
+ 
+ 
+ 
+Comparison
+1. CircleCI is recommended for small projects, where the main goal is to start the integration as fast as possible. But the pricing is a problem. 
+2. Jenkins is recommended for the big projects, where you need a lot of customizations that can be done by usage of various plugins. You may change almost everything here, still this process may take a while. If you are planning the quickest start with the CI system Jenkins might not be your choice. 
+3. GitLabs CI can be fully integrated with GitLab. Quick project setup: Add projects with a single click, all hooks are setup automatically via the GitLab API. 
+ 
+Reference 
+1. https://hackernoon.com/continuous-integration-circleci-vs-travis-ci-vs-jenkins-41a1c2bd95f5 
+2. https://www.slant.co/versus/629/2477/~codeship_vs_jenkins 
+3. https://www.slant.co/versus/625/2477/~circleci_vs_jenkins 
+4. https://www.slant.co/topics/799/~best-continuous-integration-tools 
+5. https://about.gitlab.com/comparison/gitlab-vs-circleci.html 
+6. https://docs.gitlab.com/ee/ci/ 
+ 
+
